@@ -1,0 +1,29 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #111;
+  color: white;
+}
+
+#puzzle-container {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  gap: 2px;
+  width: 306px;
+  margin: 20px auto;
+}
+
+.puzzle-tile {
+  width: 100px;
+  height: 100px;
+  background-image: url('xgambar.jpg');
+  background-size: 300px 300px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.empty {
+  background: black;
+  cursor: default;
+}
